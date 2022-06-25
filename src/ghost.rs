@@ -112,7 +112,7 @@ impl BulletType {
 pub enum TriggerEvent {
     None,
     Jump,
-    Fall,
+    // Fall,
     Land,
     Bullet(BulletType),
     Discard(DiscardAbility),
