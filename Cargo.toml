@@ -1,0 +1,6 @@
+[package]
+name = "neon-white-phant-parser"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
