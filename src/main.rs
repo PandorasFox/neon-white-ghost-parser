@@ -3,6 +3,7 @@ use std::io;
 
 mod ghost;
 mod ghost_parser;
+mod ghost_stats;
 
 fn main() {
     let mut ghost = ghost::Ghost::new();
@@ -14,6 +15,7 @@ fn main() {
                 std::process::exit(1);
             }
             // process results here! We have it all in-memory!
+            ghost_stats::collect_stats(&ghost);
         }
         Err(error) => println!("error: {error}"),
     }
