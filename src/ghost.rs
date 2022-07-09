@@ -30,6 +30,14 @@ impl Vector3 {
         self.y += v.y;
         self.z += v.z;
     }
+
+    pub fn zero() -> Vector3 {
+        Vector3 {
+            x: 0.0,
+            y: 0.0,
+            z: 0.0
+        }
+    }
 }
 
 #[derive(Copy, Clone)]
